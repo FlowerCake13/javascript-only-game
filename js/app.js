@@ -3,7 +3,7 @@
 function resizeWindow() {
 	var width = window.innerWidth-40;
 	var height = window.innerHeight-40;
-	var canvas = Documents.getElementsByTagName('canvas')[0];
+	var canvas = document.getElementsByTagName('canvas')[0];
 	canvas.width = width;
 	canvas.height = height;
 	canvas.style.width = width + 'px';
@@ -47,6 +47,7 @@ var monster = {};
 var monstersCaught = 0;
 var keysDown = {};
 addEventListener("keydown",function (e) {
+	console.log(e.key)
 	keysDown[e.keyCode] = true;
 }, false);
 addEventListener("keyup", function (e){
