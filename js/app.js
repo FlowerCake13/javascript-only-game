@@ -41,7 +41,7 @@ monsterImage.src = "unicorn.png";
 
 	
 var hero = {
-	speed: 10
+	speed: 50
 	};
 var monster = {};
 var monstersCaught = 0;
